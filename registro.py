@@ -1,6 +1,6 @@
 import csv # Importa csv para poder manejar archivos CSV
 import os # Importa os (operating system) para poder chequear que archivos existen
-import re # Importa re (regual expresions) para poder verificar las contraseñas
+import re # Importa re (regualar expressions) para poder verificar las contraseñas
 
 USUARIOS = "usuarios_simulados.csv"  # Agrega el archivoCSV donde se guardan los usuarios
 
