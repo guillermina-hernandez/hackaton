@@ -6,10 +6,16 @@ USUARIOS = "usuarios_simulados.csv"  # Agrega el archivoCSV donde se guardan los
 
 def validar_contraseña(contra): #Chequea una lista de posibles errores en la contraseña y devuelve una lista con estos errores
     errores = []
-    if len(contra) < 8:
+    if len(contra) < 12:
         errores.append("La contraseña debe tener al menos 8 caracteres")
-    #agregar más errores
-
+    if not re.search(r"[A-Z]", contra):
+        errores.append("La contraseña debe contener al menos una letra mayúscula")
+    if not re.search(r"[a-z]", contra):
+        errores.append("La contraseña debe contener al menos una letra minúscula")
+    if not re.search(r"[0-9]", contra):
+        errores.append("La contraseña debe contener al menos un número")
+    if not re.search(r"[!@#$%^&*(),.?\":{}|<>]", contra):
+        errores.append("La contraseña debe contener al menos un carácter especial (!@#$%^&*(),.?\":{}|<>)")
     return errores
 
 def usuario_existente(usuario): #Chequea que el usuario exista en el CSV
@@ -54,12 +60,13 @@ def iniciar_sesion():
 
     if not usuario_existente(usuario):
         print("El nombre de usuario no existe.")
-        return
+        return None
 
     with open(USUARIOS, mode='r', newline='', encoding='utf-8') as file:
         reader = csv.reader(file)
         for fila in reader:
             if fila[0] == usuario and fila[1] == contraseña:
                 print("¡Inicio de sesión exitoso!")
-                return
+                return usuario
     print("Contraseña incorrecta.")
+    return None
