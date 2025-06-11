@@ -7,7 +7,7 @@ def obtener_ultima_consulta(usuario_actual, archivo_historial="historial_global.
         with open(archivo_historial, newline='', encoding='utf-8') as file:
             lector = csv.DictReader(file)
             consultas_usuario = [
-                fila for fila in lector if fila['NombreDeUsuario'] == usuario_actual
+                fila for fila in lector if fila['Usuario'] == usuario_actual
             ]
         if not consultas_usuario:
             print("No se encontraron consultas previas para este usuario.")

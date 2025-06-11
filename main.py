@@ -26,7 +26,7 @@ def menu_principal(usuario_actual):
             print("En desarrollo\n")
         elif opcion == "4":
             API_KEY_GEMINI = "AIzaSyBdBHVCj7NLzgLQ1EC6MPqWJv-122ybjlU"
-            consejo_ia(usuario_actual)
+            consejo_ia(usuario_actual, API_KEY_GEMINI)
             print("En desarrollo\n")
         elif opcion == "5":
             #acerca_de()
