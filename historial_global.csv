@@ -1,0 +1,12 @@
+Usuario,Ciudad,FechaHora,Temperatura_C,Condicion_Clima,Humedad_Porcentaje,Viento_kmh
+mica,Buenos AIres,2025-06-11 12:18:30,12.95,Cielo claro,76,17.7
+mica,cordoba,2025-06-11 12:24:51,18.48,Cielo claro,24,31.5
+mica,rosario,2025-06-11 12:25:03,15.35,Cielo claro,63,16.7
+mica,dallas,2025-06-11 12:25:08,21.94,Nubes,95,13.0
+mica,bogota,2025-06-11 12:25:19,14.5,Nubes,72,14.8
+mica,buenos aires,2025-06-11 12:33:23,13.38,Cielo claro,74,17.7
+micaela,miami,2025-06-11 12:35:15,30.78,Muy nuboso,70,22.2
+micaela,san pablo,2025-06-11 12:35:27,25.15,Nubes,89,3.1
+mica,buenos aires,2025-06-11 12:49:22,13.54,Cielo claro,74,17.7
+bianca,lima,2025-06-11 12:51:15,23.28,Nubes,74,11.1
+bianca,salta,2025-06-11 12:51:35,11.33,Nubes,71,3.7

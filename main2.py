@@ -1,4 +1,6 @@
 from registro import registrar_usuario, iniciar_sesion
+from main import menu_principal
+
 
 while True:
     print("\nBIENVENIDO/A A GUARDIANCLIMA ITBA")
@@ -11,7 +13,8 @@ while True:
         usuario = iniciar_sesion()
         if usuario:
             print(f"Bienvenido, {usuario}!")
-            break
+            menu_principal(usuario)
+            
     elif opcion == '2':
         usuario = registrar_usuario()
     elif opcion == '3':

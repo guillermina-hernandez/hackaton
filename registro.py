@@ -7,7 +7,7 @@ USUARIOS = "usuarios_simulados.csv"  # Agrega el archivoCSV donde se guardan los
 def validar_contraseña(contra): #Chequea una lista de posibles errores en la contraseña y devuelve una lista con estos errores
     errores = []
     if len(contra) < 12:
-        errores.append("La contraseña debe tener al menos 8 caracteres")
+        errores.append("La contraseña debe tener al menos 12 caracteres")
     if not re.search(r"[A-Z]", contra):
         errores.append("La contraseña debe contener al menos una letra mayúscula")
     if not re.search(r"[a-z]", contra):
