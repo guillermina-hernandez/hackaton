@@ -39,7 +39,7 @@ def obtener_ultimo_clima_usuario(usuario_actual):
 def obtener_consejo_ia_gemini(api_key_gemini, temperatura, condicion_clima, humedad, viento_kmh):
     try:
         genai.configure(api_key=api_key_gemini)
-        model = genai.GenerativeModel('gemini-1.5-pro-latest')
+        model = genai.GenerativeModel(model_name="gemini-2.5-flash-preview-05-20")
 
 
         prompt_diseñado_por_equipo = (
