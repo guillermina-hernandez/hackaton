@@ -3,6 +3,7 @@ from ver_historial import ver_historial_personal
 from estadisticas import estadisticas_globales
 from consejo_ia import consejo_ia
 #from acerca_de import acerca_de
+import os
 
 def menu_principal(usuario_actual):  
 
@@ -20,14 +21,14 @@ def menu_principal(usuario_actual):
             consultar_clima(usuario_actual)
         elif opcion == "2":
             ver_historial_personal(usuario_actual)
-            print("En desarrollo\n")
         elif opcion == "3":
             estadisticas_globales()
-            print("En desarrollo\n")
         elif opcion == "4":
-            API_KEY_GEMINI = "AIzaSyBdBHVCj7NLzgLQ1EC6MPqWJv-122ybjlU"
-            consejo_ia(usuario_actual, API_KEY_GEMINI)
-            print("En desarrollo\n")
+            API_KEY_GEMINI = "AIzaSyBWSAdU6uGjaiZprpeZJwfXh-U9tTvNR58"
+            if not API_KEY_GEMINI:
+                print("API Key de Gemini no configurada. Por favor, configúrela antes de usar esta opción.")
+            else:
+                consejo_ia(usuario_actual, API_KEY_GEMINI)
         elif opcion == "5":
             #acerca_de()
             print("En desarrollo\n")

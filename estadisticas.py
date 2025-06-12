@@ -34,4 +34,4 @@ def estadisticas_globales():
         shutil.copy(HISTORIAL, EXPORTADO)
         print(f"\n Historial completo exportado como '{EXPORTADO}'.")
     except Exception as err:
-        print(f"rror al exportar el historial: {err}")
+        print(f"Error al exportar el historial: {err}")
