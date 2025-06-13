@@ -2,7 +2,7 @@ from consultar_clima import consultar_clima
 from ver_historial import ver_historial_personal
 from estadisticas import estadisticas_globales
 from consejo_ia import consejo_ia
-#from acerca_de import acerca_de
+from acerca_de import mostrar_acerca_de
 import os
 
 def menu_principal(usuario_actual):  
@@ -30,8 +30,7 @@ def menu_principal(usuario_actual):
             else:
                 consejo_ia(usuario_actual, API_KEY_GEMINI)
         elif opcion == "5":
-            #acerca_de()
-            print("En desarrollo\n")
+            mostrar_acerca_de()
         elif opcion == "6":
             print("Sesión cerrada.\n")
             break
