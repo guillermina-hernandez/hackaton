@@ -4,7 +4,7 @@ from datetime import datetime
 import os
 
 
-API_KEY = "2ec2d4136b7cc15376f4e6d4429566b2"  
+API_KEY = "SU_API_KEY_DE_OPENWEATHERMAP"  # Reemplazar con su API Key de OpenWeatherMap
 HISTORIAL = "historial_global.csv"
 
 def consultar_clima(usuario_actual): 

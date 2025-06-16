@@ -24,7 +24,7 @@ def menu_principal(usuario_actual):
         elif opcion == "3":
             estadisticas_globales()
         elif opcion == "4":
-            API_KEY_GEMINI = "AIzaSyBWSAdU6uGjaiZprpeZJwfXh-U9tTvNR58"
+            API_KEY_GEMINI = "KEY_DE_SU_API_GEMINI" # Reemplazar con la clave de API real
             if not API_KEY_GEMINI:
                 print("API Key de Gemini no configurada. Por favor, configúrela antes de usar esta opción.")
             else:
